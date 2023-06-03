@@ -1,0 +1,146 @@
+body {
+    background-color: #333848;
+    z-index: -1;
+}
+
+.first {
+    width: 165px;
+    height: 250px;
+    position: absolute;
+    right: 850px;
+    top: 180px;
+    background-image: linear-gradient(to right, #868edd, #88d9dc);
+    border-radius: 15px;
+}
+
+.second {
+    width: 180px;
+    height: 270px;
+    position: absolute;
+    right: 650px;
+    top: 180px;
+    background-image: linear-gradient(to right, #ff5c2a, #ff5667);
+    border-radius: 15px;
+}
+
+.third {
+    width: 165px;
+    height: 250px;
+    background-image: linear-gradient(to right, #8ab63d, #009e96);
+    position: absolute;
+    right: 460px;
+    top: 180px;
+    border-radius: 15px;
+}
+
+.first:hover,.second:hover,.third:hover {
+    animation-name: see;
+    animation-duration: .5s;
+}
+
+
+@keyframes see {
+    0% {}
+
+    100% {
+        transform: scaleX(1.1);
+    }
+
+    100% {
+        transform: scaleY(1.02);
+    }
+}
+
+.subs {
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    position: absolute;
+    right: 850px;
+    top: 395px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.st,
+.st2,
+.st3 {
+    position: absolute;
+    top: 9px;
+    left: 5px;
+}
+
+.subs2 {
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    position: absolute;
+    right: 650px;
+    top: 415px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.subs3 {
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    position: absolute;
+    right: 460px;
+    top: 395px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.subs:hover,
+.subs3:hover {
+    animation-name: subsm;
+    border-top-left-radius: 0px;
+    animation-duration: 5s;
+    width: 165px;
+    border-bottom-left-radius: 15px;
+}
+
+.subs2:hover {
+    animation-name: subsm;
+    border-top-left-radius: 0px;
+    animation-duration: 5s;
+    width: 180px;
+    border-bottom-left-radius: 15px;
+}
+
+
+@keyframes subsm {
+    0% {}
+
+    50% {
+        transition-property: border-top-left-radius, width;
+    }
+
+    100% {
+        transition-property: border-top-left-radius, width, border-bottom-left-radius, animation-duration;
+    }
+
+
+}
+
+.money{
+    font-size: 50px;
+    color: white;
+}
+.free{
+    font-size: 20px;
+    color: white;
+}
+.basic{
+    font-size: 15px;
+        color: white;
+}
+
+.texo{
+    text-align: center;
+    font-size: 20px;
+        color: white;
+}
